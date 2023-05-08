@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tela Principal</title>
+
+    <script src="./exercicio1.js" defer></script>
+    <link rel="stylesheet" href="./exercicio1.css">
+</head>
+
+<body id="body">
+    <header class="cabecalho">
+        <div class="botao" id="btn">
+            <p id="p_btn">trocar cor</p>
+        </div>
+    </header>
+    <main class="fundo">
+        <section class="secao_lista">
+            <h2>Lista de desejos</h2>
+
+            <input type="text" id="texto" placeholder="adicione um desejo">
+            <ul id="lista">
+                <li>teste</li>
+            </ul>
+            <button onclick="adicionar()">Adicionar</button>
+        </section>
+
+        <section class="secao_img">
+            <h2>Clique na imagem para tunar</h2>
+            <img src="./img/Desenho_feito_no_paint_representando_o_carro_relampago_marquinhos.jpg" alt="carro feio" id="img" onclick="mudarImg()">
+        </section>
+
+        <section class="secao_btns">
+            <button onclick="alterarTexto()" class="btns">mudar texto</button>
+            <button onclick="esconderBotao()" class="btns">esconder elemento</button>
+            <button onclick="aparecerBotao()" class="btns">aparecer elemento</button>
+        </section>
+    </main>
+</body>
+
+</html>
